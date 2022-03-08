@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>4.2 Code Exercise 06: HTML Forms</title>
+</head>
+<body>
+    <h1>Please Input the number of gallons you have</h1>
+    <form id="userInfo">
+        <!-- creating input for number of gallons -->
+        <input type="number" id="numGallon" step=".01" min="0" required><label for="numGallon">Enter Gallons Here</label><br>
+        <fieldset>
+            <legend>Which conversion would you like to see?</legend>
+            <!-- different radio buttons for conversion -->
+              <input type="radio" name="galCon" value="quart" id="quartCon" checked><label for="quartCon">Quarts</label><br>
+               <input type="radio" name="galCon" value="pint" id="pintCon"><label for="pintCon">Pints</label><br>
+              <input type="radio" name="galCon" value="cup" id="cupCon"><label for="cupCon">Cups</label><br>
+          </fieldset>
+          <!-- button for when they want to convert -->
+          <input type="button" id="conButton" value="Click Here to Convert!">
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form id="results">
+        <!-- final conversion table headings -->
+        <h2 id="quartFinal">Quarts</h2><br>
+        <h2 id="pintFinal">Pints </h2><br>
+        <h2 id="cupFinal">Cups</h2><br>
+    </form>
+    <br>
+    <br>
+    <h1>--------------Problem #2 - Movie Star------------------</h1>
+    <!-- final result heading and image spot -->
+    <h1 id="resulter"></h1>
+    <img id="picture" src="" height="360">
+    <br>
+    <br>
+    <form id="movies">
+        <!-- different input boxes for them to put in numbers, requiring that they are 0 or greater and are required -->
+        <input type="number" id="dvd" step="1" min="0" required><label for="dvd">Enter how many DVDs you have!</label><br>
+        <br>
+        <input type="number" id="bluray" step="1" min="0" required><label for="bluray">Enter how many Blu-Rays you have!</label><br>
+        <br>
+        <input type="number" id="ultraViolet" step="1" min="0" required><label for="ultraViolet">Enter how many UltraViolets you have!</label><br>
+        <br>
+        <input type="button" id="checkMem" value="Check your Member Level!"><br>
+    </form>
+    <!-- linking script -->
+    <script src="JS/script.js"></script>
+</body>
+</html>
